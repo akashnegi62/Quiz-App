@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#brain {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 10%;
+}
+
+.landing-page,
+.game-category,
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.landing-page > h1 {
+  font-size: 10vw;
+}
+
+.line {
+  width: 500px;
+  margin-top: 5px;
+  border: 1px solid rgb(89, 56, 196);
+}
+
+.landing-page > p {
+  font-size: 2vw;
+  margin: 3vw 0vw;
+}
+
+.landing-page > button {
+  font-family: "Lilita One", sans-serif;
+  padding: 1.5vw 1vw;
+  width: 20%;
+  border-radius: 10px;
+  font-size: 2.2vw;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin: 10px;
+  color: black;
+}
+
+.category-options > button {
+  font-family: "Lilita One", sans-serif;
+  padding: 1.5vw 1vw;
+  width: 40%;
+  border-radius: 10px;
+  font-size: 2.2vw;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin: 10px;
+  color: black;
+}
+
+.category-options,
+#options-container {
+  margin-top: 40px;
+}
+
+.game-category > h1 {
+  font-size: 5vw;
+}
+
+.quiz > h2 {
+  font-size: 2.5vw;
+  margin: -5vw 4vw 0vw 4vw;
+}
+
+.option {
+  font-family: "Lilita One", sans-serif;
+  padding: 1.5vw 1vw;
+  width: 40%;
+  border-radius: 10px;
+  font-size: 2.2vw;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin: 10px;
+  color: black;
+}
+
+.restart-game {
+  position: absolute;
+  bottom: 100px;
+  font-family: "Lilita One", sans-serif;
+  padding: 1.5vw 1vw;
+  width: 20%;
+  border-radius: 10px;
+  font-size: 2.2vw;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin: 10px;
+  color: black;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .landing-page > h1 {
+    font-size: 18vw;
+  }
+
+  .line {
+    width: 150px;
+  }
+
+  .landing-page > p {
+    font-size: 4vw;
+    margin-top: 5vw;
+  }
+
+  .landing-page > button {
+    padding: 4vw 0vw;
+    width: 40%;
+    font-size: 6vw;
+    margin-top: 5vw;
+  }
+
+  #brain {
+    top: 2%;
+    left: -2%;
+    width: 20%;
+  }
+
+  .category-options > button {
+    padding: 4vw 0vw;
+    width: 80%;
+    font-size: 6vw;
+  }
+
+  .game-category > h1 {
+    font-size: 10vw;
+  }
+
+  .quiz > h2 {
+    font-size: 6.5vw;
+  }
+
+  .option {
+    padding: 4vw 0vw;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 6vw;
+  }
+
+  .restart-game {
+    bottom: 80px;
+    padding: 4vw 0vw;
+    width: 40%;
+    font-size: 6vw;
+  }
+}
